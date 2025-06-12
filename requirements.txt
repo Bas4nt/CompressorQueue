@@ -1,8 +1,9 @@
-aiohttp
-https://github.com/New-dev0/Telethon/archive/diamond.zip
-html_telegraph_poster
-lxml[html_clean]
-python-decouple
-psutil
-pymediainfo
-tgcrypto
+aiohttp==3.8.4
+telethon==1.28.5
+html-telegraph-poster==0.2.1
+lxml==4.9.3
+python-decouple==3.8
+psutil==5.9.5
+pymediainfo==6.1.0
+tgcrypto==1.2.3
+ffmpeg-python==0.2.0
