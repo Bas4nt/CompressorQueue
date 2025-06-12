@@ -1,11 +1,19 @@
 [phases.setup]
-nixPkgs = ["ffmpeg", "libxml2", "libxslt"]
+nixPkgs = [
+    "ffmpeg",
+    "libxml2",
+    "libxslt",
+    "zlib",
+    "gcc",
+    "python39"
+]
 
 [phases.install]
 cmds = [
-    "pip install --upgrade pip",
-    "pip install -r requirements.txt"
+    "python -m pip install --upgrade pip",
+    "pip install wheel",
+    "pip install -r requirements.txt --use-pep517"
 ]
 
-[phases.build]
-cmds = []
+[start]
+cmd = "python3 -m bot"
