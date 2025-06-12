@@ -1,7 +1,7 @@
-aiohttp==3.8.4
+aiohttp==3.8.6
 telethon==1.28.5
 html-telegraph-poster==0.2.1
-lxml==4.9.3
+lxml==4.9.3; python_version >= '3.6'
 python-decouple==3.8
 psutil==5.9.5
 pymediainfo==6.1.0
